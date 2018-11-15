@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         }
 
-        drawerLayout.closeDrawer(GravityCompat.START, true); // ?????????
+        drawerLayout.closeDrawer(GravityCompat.START);
 
         return true;
     }
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START, true);
+            drawerLayout.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
